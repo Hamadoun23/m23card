@@ -7,18 +7,18 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="keywords" content="Barack Obama, 44e Président des États-Unis">
-    <meta name="description" content="Barack Obama - 44e Président des États-Unis">
+    <meta name="keywords" content="Abdoulaye Fakoly, Palace CEO, VP Vêtement Palace, Leaders">
+    <meta name="description" content="Abdoulaye Fakoly Sissoko - Palace CEO de VP, la marque des Leaders. Vêtement Palace, engagement caritatif, Ambassadeur orphelinat Niaber.">
     <meta name="author" content="">
 
     <!-- Title  -->
-    <title>Barack Obama</title>
+    <title>Abdoulaye Fakoly Sissoko</title>
 
     <!-- favicon icon -->
-    <link rel="shortcut icon" href="Assetsly/Barack.png">
-    <link rel="apple-touch-icon" href="Assetsly/Barack.png">
-    <link rel="android-chrome" sizes="192x192" href="Assetsly/Barack.png">
-    <link rel="favicon" sizes="32x32" href="Assetsly/Barack.png">
+    <link rel="shortcut icon" href="Assetsly/palace/presi.jpeg">
+    <link rel="apple-touch-icon" href="Assetsly/palace/presi.jpeg">
+    <link rel="android-chrome" sizes="192x192" href="Assetsly/palace/presi.jpeg">
+    <link rel="favicon" sizes="32x32" href="Assetsly/palace/presi.jpeg">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
@@ -118,11 +118,49 @@
             line-height: 1.5;
             margin: 0;
         }
+        .hero-obama-style .hero-title--sub {
+            font-size: 0.95rem;
+            color: #6B7280;
+            margin-top: 4px;
+        }
         .hero-obama-style .hero-title-underline {
             width: 50px;
             height: 2px;
             background: #D12E4A;
             margin-top: 16px;
+        }
+        .btn-save-contact {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 20px;
+            padding: 12px 24px;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #fff;
+            background: #059669;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.2s ease, transform 0.15s ease;
+            box-shadow: 0 2px 8px rgba(5, 150, 105, 0.35);
+        }
+        .btn-save-contact:hover {
+            background: #047857;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(5, 150, 105, 0.4);
+        }
+        .btn-save-contact:active {
+            transform: translateY(0);
+        }
+        .btn-save-contact svg {
+            width: 18px;
+            height: 18px;
+            flex-shrink: 0;
+        }
+        @media (max-width: 991px) {
+            .btn-save-contact { margin-left: auto; margin-right: auto; }
         }
         .hero-obama-style .hero-divider {
             width: 1px;
@@ -560,6 +598,11 @@
             width: 28px;
             height: 28px;
         }
+        .social-card--snapchat .social-card__icon img {
+            width: 32px;
+            height: 32px;
+            object-fit: contain;
+        }
         .social-card__label {
             font-size: 11px;
             font-weight: 600;
@@ -573,6 +616,12 @@
             }
             .social-card {
                 width: calc(50% - 6px);
+            }
+        }
+        /* Bouton remonter en haut - visible sur mobile */
+        @media (max-width: 768px) {
+            .progress-wrap {
+                display: block !important;
             }
         }
     </style>
@@ -592,11 +641,12 @@
 
         <div class="loader-wrap-heading">
             <div class="load-text">
-                <span>O</span>
-                <span>B</span>
+                <span>P</span>
                 <span>A</span>
-                <span>M</span>
+                <span>L</span>
                 <span>A</span>
+                <span>C</span>
+                <span>E</span>
             </div>
         </div>
     </div>
@@ -638,16 +688,20 @@
                         <div class="hero-l-shape-tl"></div>
                         <div class="hero-l-shape-bl"></div>
                         <h1 class="hero-name">
-                            Barack<br><span class="line2">Obama</span>
+                            Abdoulaye<br><span class="line2">Fakoly Sissoko</span>
                         </h1>
-                        <p class="hero-title">44e Président des États-Unis</p>
+                        <p class="hero-title">CEO de VP — La marque des Leaders</p>
                         <div class="hero-title-underline"></div>
+                        <button type="button" class="btn-save-contact" id="btn-save-contact" aria-label="Enregistrer le contact">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                            Enregistrer Contact
+                        </button>
                     </div>
                     <div class="hero-divider"></div>
                     <div class="hero-right">
                         <div class="hero-l-shape-tr"></div>
                         <div class="hero-portrait">
-                            <img src="Assetsly/Barack.png" alt="Barack Obama - 44e Président des États-Unis">
+                            <img src="Assetsly/palace/presi.jpeg" alt="Abdoulaye Fakoly Sissoko - Palace CEO de VP">
                         </div>
                     </div>
                 </header>
@@ -668,14 +722,12 @@
                         <div class="row" data-ui-animate data-delay="0.2">
                             <div class="col-lg-4">
                                 <div class="sec-head mb-80px">
-                                    <h6 class="text-uppercase">About me</h6>
+                                    <h6 class="text-uppercase">À propos</h6>
                                 </div>
                             </div>
                             <div class="col-lg-8">
                                 <div>
-                                    <h2 class="text-indent fs-40">Ma mission était de conduire l'Amérique à travers les défis avec
-                                        intégrité, rassembler les gens et construire un avenir plus inclusif
-                                        pour tous.</h2>
+                                    <h2 class="text-indent fs-40">Homme politique engagé dans les actes caritatifs, Abdoulaye Fakoly incarne le leadership par l'action. À travers VP — Vêtement Palace, il porte la marque des Leaders.</h2>
                                 </div>
                             </div>
                             <div class="col-lg-3 offset-lg-2 col-md-6 col-10">
@@ -689,18 +741,18 @@
                                 <div class="row mt-80px lists-row">
                                     <div class="col-6 col-sm-6 sm-mb15">
                                         <ul class="rest">
-                                            <li class="mb-15px">Espoir</li>
-                                            <li class="mb-15px">Changement</li>
-                                            <li class="mb-15px">Unité</li>
-                                            <li class="mb-15px">Progrès</li>
+                                            <li class="mb-15px">Leadership</li>
+                                            <li class="mb-15px">Engagement</li>
+                                            <li class="mb-15px">Charité</li>
+                                            <li class="mb-15px">Formation</li>
                                             <li>Intégrité</li>
                                         </ul>
                                     </div>
                                     <div class="col-6 col-sm-6">
                                         <ul class="rest">
                                             <li class="mb-15px">Démocratie</li>
-                                            <li class="mb-15px">Diplomatie</li>
-                                            <li class="mb-15px">Santé</li>
+                                            <li class="mb-15px">Finance</li>
+                                            <li class="mb-15px">Culture</li>
                                             <li>Éducation</li>
                                         </ul>
                                     </div>
@@ -713,10 +765,10 @@
                                             <div class="obama-address-card__line obama-address-card__line--tl"></div>
                                             <div class="obama-address-card__line obama-address-card__line--br"></div>
                                             <div class="obama-address-card__inner">
-                                                <span class="obama-address-card__label">Adresse</span>
-                                                <h3 class="obama-address-card__title">Fondation Obama</h3>
-                                                <p class="obama-address-card__address">5235 S. Harper Court<br>Chicago, IL 60615<br>États-Unis</p>
-                                                <a href="https://www.obama.org" target="_blank" rel="noopener" class="obama-address-card__link">obama.org</a>
+                                                <span class="obama-address-card__label">Marque</span>
+                                                <h3 class="obama-address-card__title">VP — Vêtement Palace</h3>
+                                                <p class="obama-address-card__address">La marque des Leaders. Le palacisme : une sagacité qui lie modernité et culture africaine.</p>
+                                                <span class="obama-address-card__link obama-address-card__link--muted">Vêtement Palace</span>
                                             </div>
                                         </div>
                                     </div>
@@ -725,10 +777,10 @@
                                             <div class="obama-address-card__line obama-address-card__line--tl"></div>
                                             <div class="obama-address-card__line obama-address-card__line--br"></div>
                                             <div class="obama-address-card__inner">
-                                                <span class="obama-address-card__label">Mandat</span>
-                                                <h3 class="obama-address-card__title">Présidence</h3>
-                                                <p class="obama-address-card__address">2009 — 2017<br>Premier président afro-américain<br>Prix Nobel de la paix 2009</p>
-                                                <span class="obama-address-card__link obama-address-card__link--muted">44e président</span>
+                                                <span class="obama-address-card__label">Formation</span>
+                                                <h3 class="obama-address-card__title">Parcours</h3>
+                                                <p class="obama-address-card__address">Master en banque et ingénierie financière<br>Président de l'AGE à l'IAM (2025)</p>
+                                                <span class="obama-address-card__link obama-address-card__link--muted">Leader</span>
                                             </div>
                                         </div>
                                     </div>
@@ -737,10 +789,10 @@
                                             <div class="obama-address-card__line obama-address-card__line--tl"></div>
                                             <div class="obama-address-card__line obama-address-card__line--br"></div>
                                             <div class="obama-address-card__inner">
-                                                <span class="obama-address-card__label">Héritage</span>
-                                                <h3 class="obama-address-card__title">Engagement</h3>
-                                                <p class="obama-address-card__address">Former la prochaine génération de leaders citoyens. Éducation, démocratie et changement climatique.</p>
-                                                <a href="https://www.obama.org" target="_blank" rel="noopener" class="obama-address-card__link">En savoir plus</a>
+                                                <span class="obama-address-card__label">Engagement</span>
+                                                <h3 class="obama-address-card__title">Actes caritatifs</h3>
+                                                <p class="obama-address-card__address">Homme politique engagé. Titre honorifique d'Ambassadeur de l'orphelinat Niaber.</p>
+                                                <span class="obama-address-card__link obama-address-card__link--muted">Ambassadeur orphelinat Niaber</span>
                                             </div>
                                         </div>
                                     </div>
@@ -749,29 +801,29 @@
                         </div>
                         <div class="social-cards-wrapper mt-50px" data-ui-animate data-delay="0.4">
                             <div class="social-cards-row">
-                                <a href="https://wa.me/22375758160" target="_blank" rel="noopener" class="social-card" aria-label="WhatsApp">
+                                <a href="https://wa.me/22374335905" target="_blank" rel="noopener" class="social-card" aria-label="WhatsApp">
                                     <div class="social-card__icon">
                                         <svg viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
                                     </div>
                                     <span class="social-card__label">WhatsApp</span>
                                 </a>
-                                <a href="sms:+33123456789" class="social-card" aria-label="SMS">
+                                <a href="https://www.tiktok.com/@palace_sissoko?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener" class="social-card" aria-label="TikTok">
                                     <div class="social-card__icon">
-                                        <svg viewBox="0 0 24 24" fill="#34B7F1"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H5.17L4 17.17V4h16v12z"/></svg>
+                                        <svg viewBox="0 0 24 24" fill="#000000"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
                                     </div>
-                                    <span class="social-card__label">SMS</span>
+                                    <span class="social-card__label">TikTok</span>
                                 </a>
-                                <a href="https://linkedin.com/in/votre-profil" target="_blank" rel="noopener" class="social-card" aria-label="LinkedIn">
-                                    <div class="social-card__icon">
-                                        <svg viewBox="0 0 24 24" fill="#0A66C2"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-                                    </div>
-                                    <span class="social-card__label">LinkedIn</span>
-                                </a>
-                                <a href="https://facebook.com/votre-page" target="_blank" rel="noopener" class="social-card" aria-label="Facebook">
+                                <a href="https://www.facebook.com/share/1GttQpMNyu/?mibextid=wwXIfr" target="_blank" rel="noopener" class="social-card" aria-label="Facebook">
                                     <div class="social-card__icon">
                                         <svg viewBox="0 0 24 24" fill="#1877F2"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
                                     </div>
                                     <span class="social-card__label">Facebook</span>
+                                </a>
+                                <a href="https://snapchat.com/t/5EK7nDwS" target="_blank" rel="noopener" class="social-card social-card--snapchat" aria-label="Snapchat">
+                                    <div class="social-card__icon">
+                                        <img src="Assetsly/snap.png" alt="Snapchat" width="32" height="32">
+                                    </div>
+                                    <span class="social-card__label">Snapchat</span>
                                 </a>
                             </div>
                         </div>
@@ -826,7 +878,7 @@
                 <div class="container-xxl" data-ui-animate data-delay="0.2">
                     <div class="o-hidden border-radius-100px h-700px">
                         <div class="bg-img background-position-center h-800px"
-                            data-background="Assetsly/banner2.jpeg" data-speed="0.5" data-lag="0">
+                            data-background="Assetsly/palace/3.jpeg" data-speed="0.5" data-lag="0">
                         </div>
                     </div>
                 </div>
@@ -925,7 +977,7 @@
                     var parts = [];
                     parts.push('*Objet :* ' + objet);
                     parts.push('');
-                    parts.push('Bonjour à M. le président Obama,');
+                    parts.push('Bonjour à M. Fakoly,');
                     parts.push('');
                     var heureDisplay = heure ? heure.replace(':', 'h') : '';
                     parts.push('Je souhaite prendre un rendez-vous pour le ' + dateFormatted + (heureDisplay ? ' à ' + heureDisplay : '') + '.');
@@ -936,10 +988,89 @@
                     parts.push(nom);
                     parts.push(tel);
                     var text = encodeURIComponent(parts.join('\n'));
-                    window.open('https://wa.me/22375758160?text=' + text, '_blank');
+                    window.open('https://wa.me/22374335905?text=' + text, '_blank');
                 });
             }
         });
+
+        // Enregistrer Contact - vCard avec photo pour téléphone / appareil
+        var btnSaveContact = document.getElementById('btn-save-contact');
+        if (btnSaveContact) {
+            btnSaveContact.addEventListener('click', function() {
+                var btn = this;
+                var originalText = btn.innerHTML;
+                btn.disabled = true;
+                btn.innerHTML = '<span>Chargement…</span>';
+                function done() {
+                    btn.disabled = false;
+                    btn.innerHTML = originalText;
+                }
+                function buildVCard(photoBase64) {
+                    var lines = [
+                        'BEGIN:VCARD',
+                        'VERSION:3.0',
+                        'FN:Abdoulaye Fakoly Sissoko',
+                        'N:Sissoko;Abdoulaye Fakoly;;;',
+                        'TEL;TYPE=CELL:+22374335905',
+                        'ORG:VP - Vêtement Palace',
+                        'TITLE:CEO de VP'
+                    ];
+                    if (photoBase64) {
+                        var folded = '';
+                        for (var i = 0; i < photoBase64.length; i += 75) {
+                            folded += (i > 0 ? '\r\n ' : '') + photoBase64.substring(i, i + 75);
+                        }
+                        lines.push('PHOTO;ENCODING=b;TYPE=JPEG:' + folded);
+                    }
+                    lines.push('END:VCARD');
+                    return lines.join('\r\n');
+                }
+                function downloadVCard(vcard) {
+                    var blob = new Blob([vcard], { type: 'text/vcard;charset=utf-8' });
+                    var url = URL.createObjectURL(blob);
+                    var a = document.createElement('a');
+                    a.href = url;
+                    a.download = 'Abdoulaye_Fakoly_Sissoko.vcf';
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a);
+                    URL.revokeObjectURL(url);
+                }
+                function getPhotoBase64() {
+                    return fetch('Assetsly/palace/presi.jpeg')
+                        .then(function(r) { return r.blob(); })
+                        .then(function(blob) {
+                            return new Promise(function(resolve, reject) {
+                                var reader = new FileReader();
+                                reader.onloadend = function() {
+                                    resolve(reader.result.split(',')[1] || null);
+                                };
+                                reader.onerror = reject;
+                                reader.readAsDataURL(blob);
+                            });
+                        })
+                        .catch(function() {
+                            var img = document.querySelector('.hero-portrait img');
+                            if (!img || !img.complete || img.naturalWidth === 0) return null;
+                            try {
+                                var c = document.createElement('canvas');
+                                c.width = img.naturalWidth;
+                                c.height = img.naturalHeight;
+                                c.getContext('2d').drawImage(img, 0, 0);
+                                return c.toDataURL('image/jpeg', 0.9).split(',')[1];
+                            } catch (e) { return null; }
+                        });
+                }
+                getPhotoBase64()
+                    .then(function(photoBase64) {
+                        downloadVCard(buildVCard(photoBase64));
+                    })
+                    .catch(function() {
+                        downloadVCard(buildVCard(null));
+                    })
+                    .finally(done);
+            });
+        }
     </script>
 
     <!-- Obama Cards - GSAP Animation -->
