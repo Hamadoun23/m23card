@@ -1,1107 +1,300 @@
 <!DOCTYPE html>
-<html lang="zxx">
-
+<html lang="fr">
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VP — Vêtement Palace | Collection Premium · Bamako, Mali</title>
+  <meta name="description" content="VP — Vêtement Palace. Tenues traditionnelles africaines premium : agbada, boubous, kaftans et ensembles brodés. Commande via WhatsApp, livraison à Bamako et partout au Mali.">
+  <meta name="theme-color" content="#1B1712">
+  <link rel="icon" href="assets/logo.jpeg" type="image/jpeg">
+  <link rel="apple-touch-icon" href="assets/logo.jpeg">
 
-    <!-- Metas -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="keywords" content="Abdoulaye Fakoly, Palace CEO, VP Vêtement Palace, Leaders">
-    <meta name="description" content="Abdoulaye Fakoly Sissoko - Palace CEO de VP, la marque des Leaders. Vêtement Palace, engagement caritatif, Ambassadeur orphelinat Niaber.">
-    <meta name="author" content="">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="VP — Vêtement Palace">
+  <meta property="og:title" content="VP — Vêtement Palace | Collection Premium">
+  <meta property="og:description" content="L'élégance africaine réinventée. Tenues premium sur-mesure, commande via WhatsApp.">
+  <meta property="og:image" content="assets/images/produit-03.jpeg">
 
-    <!-- Title  -->
-    <title>Abdoulaye Fakoly Sissoko</title>
-
-    <!-- favicon icon -->
-    <link rel="shortcut icon" href="Assetsly/palace/presi.jpeg">
-    <link rel="apple-touch-icon" href="Assetsly/palace/presi.jpeg">
-    <link rel="android-chrome" sizes="192x192" href="Assetsly/palace/presi.jpeg">
-    <link rel="favicon" sizes="32x32" href="Assetsly/palace/presi.jpeg">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Mozilla+Text:wght@200..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- Plugins -->
-    <link rel="stylesheet" href="assets/css/plugins.css">
-
-    <!-- Core Style Css -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <!-- Flatpickr - Date/Time picker -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-
-    <!-- Header Obama style 50/50 -->
-    <style>
-        .hero-obama-style {
-            min-height: 85vh;
-            background: #F8F8F8;
-            display: flex;
-            align-items: stretch;
-        }
-        .hero-obama-style .hero-left {
-            flex: 0 0 50%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding: 80px 60px 80px 8%;
-            position: relative;
-        }
-        .hero-obama-style .hero-l-shape-tl {
-            position: absolute;
-            top: 40px;
-            left: 8%;
-            width: 60px;
-            height: 40px;
-        }
-        .hero-obama-style .hero-l-shape-tl::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 60px;
-            height: 2px;
-            background: #4F5C75;
-        }
-        .hero-obama-style .hero-l-shape-tl::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 2px;
-            height: 40px;
-            background: #4F5C75;
-        }
-        .hero-obama-style .hero-l-shape-bl {
-            position: absolute;
-            bottom: 40px;
-            left: 8%;
-            width: 60px;
-            height: 40px;
-        }
-        .hero-obama-style .hero-l-shape-bl::before {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 60px;
-            height: 2px;
-            background: #D12E4A;
-        }
-        .hero-obama-style .hero-l-shape-bl::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 2px;
-            height: 40px;
-            background: #D12E4A;
-        }
-        .hero-obama-style .hero-name {
-            font-family: 'Open Sans', 'Funnel Display', sans-serif;
-            font-size: clamp(2.8rem, 5vw, 4rem);
-            font-weight: 700;
-            color: #1E2B4B;
-            line-height: 1.1;
-            margin: 0 0 16px 0;
-            letter-spacing: -0.02em;
-        }
-        .hero-obama-style .hero-name .line2 { display: block; }
-        .hero-obama-style .hero-title {
-            font-family: 'Open Sans', sans-serif;
-            font-size: 1.25rem;
-            font-weight: 400;
-            color: #4F5C75;
-            line-height: 1.5;
-            margin: 0;
-        }
-        .hero-obama-style .hero-title--sub {
-            font-size: 0.95rem;
-            color: #6B7280;
-            margin-top: 4px;
-        }
-        .hero-obama-style .hero-title-underline {
-            width: 50px;
-            height: 2px;
-            background: #D12E4A;
-            margin-top: 16px;
-        }
-        .btn-save-contact {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            margin-top: 20px;
-            padding: 12px 24px;
-            font-family: 'Open Sans', sans-serif;
-            font-size: 0.95rem;
-            font-weight: 600;
-            color: #fff;
-            background: #059669;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: background 0.2s ease, transform 0.15s ease;
-            box-shadow: 0 2px 8px rgba(5, 150, 105, 0.35);
-        }
-        .btn-save-contact:hover {
-            background: #047857;
-            transform: translateY(-1px);
-            box-shadow: 0 4px 12px rgba(5, 150, 105, 0.4);
-        }
-        .btn-save-contact:active {
-            transform: translateY(0);
-        }
-        .btn-save-contact svg {
-            width: 18px;
-            height: 18px;
-            flex-shrink: 0;
-        }
-        @media (max-width: 991px) {
-            .btn-save-contact { margin-left: auto; margin-right: auto; }
-        }
-        .hero-obama-style .hero-divider {
-            width: 1px;
-            background: #e0e0e0;
-            flex-shrink: 0;
-        }
-        .hero-obama-style .hero-right {
-            flex: 0 0 50%;
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .hero-obama-style .hero-l-shape-tr {
-            position: absolute;
-            top: 40px;
-            right: 8%;
-            width: 50px;
-            height: 35px;
-        }
-        .hero-obama-style .hero-l-shape-tr::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            left: 0;
-            width: 50px;
-            height: 2px;
-            background: #D12E4A;
-        }
-        .hero-obama-style .hero-l-shape-tr::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 2px;
-            height: 35px;
-            background: #D12E4A;
-        }
-        .hero-obama-style .hero-portrait {
-            width: 85%;
-            max-width: 500px;
-            height: 85%;
-            max-height: 550px;
-            overflow: hidden;
-        }
-        .hero-obama-style .hero-portrait img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center top;
-        }
-        @media (max-width: 991px) {
-            .hero-obama-style { flex-direction: column; min-height: auto; }
-            .hero-obama-style .hero-left { flex: none; padding: 60px 24px 50px; text-align: center; }
-            .hero-obama-style .hero-l-shape-tl, .hero-obama-style .hero-l-shape-bl,
-            .hero-obama-style .hero-l-shape-tr { display: none; }
-            .hero-obama-style .hero-divider { width: 100%; height: 1px; }
-            .hero-obama-style .hero-portrait { width: 100%; max-width: 400px; height: 420px; max-height: none; }
-            .hero-obama-style .hero-title-underline { margin-left: auto; margin-right: auto; }
-        }
-
-        /* Obama Address Card - Minimalist */
-        .obama-address-card {
-            position: relative;
-            max-width: 420px;
-            padding: 48px 40px;
-            background: #fff;
-            border: 1px solid rgba(79, 92, 117, 0.12);
-            box-shadow: 0 4px 24px rgba(30, 43, 75, 0.06);
-            overflow: hidden;
-            opacity: 0;
-            transform: translateY(24px);
-            transition: box-shadow 0.4s ease, transform 0.4s ease;
-        }
-        .obama-address-card::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: rgba(209, 46, 74, 0.03);
-            opacity: 0;
-            transition: opacity 0.4s ease;
-            z-index: 0;
-            pointer-events: none;
-        }
-        .obama-address-card:hover {
-            box-shadow: 0 12px 40px rgba(30, 43, 75, 0.12);
-            transform: translateY(-4px);
-        }
-        .obama-address-card:hover::before {
-            opacity: 1;
-        }
-        .obama-address-card__line {
-            position: absolute;
-            background: #4F5C75;
-        }
-        .obama-address-card__line--tl {
-            top: 24px;
-            left: 24px;
-            width: 32px;
-            height: 1px;
-        }
-        .obama-address-card__line--tl::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 1px;
-            height: 24px;
-            background: #4F5C75;
-        }
-        .obama-address-card__line--br {
-            bottom: 24px;
-            right: 24px;
-            width: 32px;
-            height: 1px;
-            background: #D12E4A;
-        }
-        .obama-address-card__line--br::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            width: 1px;
-            height: 24px;
-            background: #D12E4A;
-        }
-        .obama-address-card__inner {
-            position: relative;
-            z-index: 1;
-        }
-        .obama-address-card__label {
-            display: block;
-            font-family: 'Open Sans', sans-serif;
-            font-size: 11px;
-            font-weight: 600;
-            letter-spacing: 0.2em;
-            text-transform: uppercase;
-            color: #D12E4A;
-            margin-bottom: 12px;
-        }
-        .obama-address-card__title {
-            font-family: 'Funnel Display', 'Open Sans', sans-serif;
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: #1E2B4B;
-            margin: 0 0 16px 0;
-            letter-spacing: -0.02em;
-        }
-        .obama-address-card__address {
-            font-family: 'Open Sans', sans-serif;
-            font-size: 0.95rem;
-            line-height: 1.7;
-            color: #4F5C75;
-            margin: 0 0 20px 0;
-        }
-        .obama-address-card__link {
-            font-family: 'Open Sans', sans-serif;
-            font-size: 0.9rem;
-            font-weight: 500;
-            color: #1E2B4B;
-            text-decoration: none;
-            border-bottom: 1px solid rgba(30, 43, 75, 0.3);
-            transition: border-color 0.3s ease, color 0.3s ease;
-        }
-        .obama-address-card__link:hover {
-            border-bottom-color: #D12E4A;
-            color: #D12E4A;
-        }
-        .obama-address-card__link--muted {
-            border-bottom: none;
-            color: #4F5C75;
-            cursor: default;
-        }
-        .obama-address-card__link--muted:hover {
-            border-bottom-color: transparent;
-            color: #4F5C75;
-        }
-        .obama-cards-row {
-            align-items: stretch;
-        }
-        .obama-cards-row > [class*="col-"] {
-            display: flex;
-        }
-        .obama-cards-row .obama-address-card {
-            max-width: 100%;
-            width: 100%;
-            flex: 1;
-            height: 420px;
-            min-height: 420px;
-            display: flex;
-            flex-direction: column;
-        }
-        .obama-cards-row .obama-address-card .obama-address-card__inner {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            min-height: 0;
-        }
-        .obama-cards-row .obama-address-card .obama-address-card__address {
-            flex: 1;
-            min-height: 120px;
-        }
-
-        /* RDV Card - Demande de rendez-vous */
-        .rdv-card {
-            position: relative;
-            padding: 48px 40px;
-            background: #fff;
-            border: 1px solid rgba(79, 92, 117, 0.12);
-            box-shadow: 0 4px 24px rgba(30, 43, 75, 0.06);
-            overflow: hidden;
-        }
-        .rdv-card__line {
-            position: absolute;
-        }
-        .rdv-card__line--tl {
-            top: 24px;
-            left: 24px;
-            width: 32px;
-            height: 1px;
-            background: #4F5C75;
-        }
-        .rdv-card__line--tl::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 1px;
-            height: 24px;
-            background: #4F5C75;
-        }
-        .rdv-card__line--br {
-            bottom: 24px;
-            right: 24px;
-            width: 32px;
-            height: 1px;
-            background: #D12E4A;
-        }
-        .rdv-card__line--br::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            width: 1px;
-            height: 24px;
-            background: #D12E4A;
-        }
-        .rdv-card__inner { position: relative; z-index: 1; }
-        .rdv-card__label {
-            display: block;
-            font-size: 11px;
-            font-weight: 600;
-            letter-spacing: 0.2em;
-            text-transform: uppercase;
-            color: #D12E4A;
-            margin-bottom: 12px;
-        }
-        .rdv-card__title {
-            font-family: 'Funnel Display', 'Open Sans', sans-serif;
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: #1E2B4B;
-            margin: 0 0 8px 0;
-        }
-        .rdv-card__desc {
-            font-size: 0.9rem;
-            color: #4F5C75;
-            margin: 0 0 24px 0;
-            line-height: 1.5;
-        }
-        .rdv-form__row {
-            display: flex;
-            gap: 16px;
-            margin-bottom: 16px;
-        }
-        .rdv-form__row:last-of-type { margin-bottom: 20px; }
-        .rdv-form__field {
-            flex: 1;
-            min-width: 0;
-        }
-        .rdv-form__label {
-            display: block;
-            font-size: 0.8rem;
-            font-weight: 600;
-            color: #4F5C75;
-            margin-bottom: 6px;
-        }
-        .rdv-form__input--date {
-            min-height: 48px;
-            font-size: 1rem;
-            cursor: pointer;
-        }
-        .rdv-form__input--time {
-            min-height: 48px;
-            font-size: 1rem;
-            cursor: pointer;
-        }
-        .rdv-form__input--time::-webkit-calendar-picker-indicator {
-            opacity: 0.6;
-            cursor: pointer;
-            padding: 4px;
-        }
-        @media (max-width: 575px) {
-            .rdv-form__row--datetime { flex-direction: column; }
-            .rdv-form__input--date,
-            .rdv-form__input--time {
-                min-height: 52px;
-                font-size: 16px;
-            }
-        }
-        .rdv-form__input {
-            flex: 1;
-            padding: 14px 18px;
-            border: 1px solid rgba(79, 92, 117, 0.2);
-            border-radius: 4px;
-            font-size: 0.95rem;
-            font-family: 'Open Sans', sans-serif;
-            color: #1E2B4B;
-            background: #fff;
-            transition: border-color 0.2s ease;
-        }
-        .rdv-form__input::placeholder { color: #9ca3af; }
-        .rdv-form__input:focus {
-            outline: none;
-            border-color: #D12E4A;
-        }
-        .rdv-form__textarea {
-            resize: vertical;
-            min-height: 80px;
-        }
-        .rdv-form__btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            width: 100%;
-            padding: 16px 24px;
-            background: #25D366;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-            font-size: 1rem;
-            font-weight: 600;
-            font-family: 'Open Sans', sans-serif;
-            cursor: pointer;
-            transition: background 0.2s ease, transform 0.2s ease;
-        }
-        .rdv-form__btn:hover {
-            background: #20bd5a;
-            transform: translateY(-1px);
-        }
-        @media (max-width: 575px) {
-            .rdv-form__row { flex-direction: column; gap: 0; }
-            .rdv-card { padding: 32px 24px; }
-        }
-        /* Flatpickr - style cohérent */
-        .flatpickr-calendar {
-            font-family: 'Open Sans', sans-serif !important;
-        }
-        .flatpickr-day.selected, .flatpickr-day.startRange, .flatpickr-day.endRange {
-            background: #D12E4A !important;
-            border-color: #D12E4A !important;
-        }
-        .flatpickr-day:hover {
-            background: rgba(209, 46, 74, 0.2) !important;
-            border-color: rgba(209, 46, 74, 0.3) !important;
-        }
-
-        /* Fond blanc sur tous les devices */
-        body.home-freelancer {
-            background: #fff !important;
-            color: #1E2B4B !important;
-        }
-        body.home-freelancer .intro-style2,
-        body.home-freelancer .sub-bg,
-        body.home-freelancer .item-skill {
-            background: #F8F8F8 !important;
-            color: #1E2B4B;
-        }
-        body.home-freelancer #smooth-content,
-        body.home-freelancer main {
-            background: #fff !important;
-        }
-        body.home-freelancer .footer-style4 {
-            background: #fff !important;
-            color: #1E2B4B;
-        }
-
-        /* Social cards - icônes réseaux en cartes centrées */
-        .social-cards-wrapper {
-            display: flex;
-            justify-content: center;
-        }
-        .social-cards-row {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 16px;
-            max-width: 560px;
-            margin: 0 auto;
-        }
-        .social-card {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 120px;
-            padding: 24px 20px;
-            background: #fff;
-            border: 1px solid rgba(79, 92, 117, 0.1);
-            border-radius: 12px;
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
-            text-decoration: none;
-            color: #1E2B4B;
-            transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
-        }
-        .social-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-            border-color: rgba(79, 92, 117, 0.15);
-            color: #1E2B4B;
-        }
-        .social-card__icon {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 56px;
-            height: 56px;
-            border-radius: 50%;
-            background: #F5F5F5;
-            margin-bottom: 12px;
-        }
-        .social-card__icon svg {
-            width: 28px;
-            height: 28px;
-        }
-        .social-card--snapchat .social-card__icon img {
-            width: 32px;
-            height: 32px;
-            object-fit: contain;
-        }
-        .social-card__label {
-            font-size: 11px;
-            font-weight: 600;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-        }
-        @media (max-width: 575px) {
-            .social-cards-row {
-                gap: 12px;
-                max-width: 320px;
-            }
-            .social-card {
-                width: calc(50% - 6px);
-            }
-        }
-        /* Bouton remonter en haut - visible sur mobile */
-        @media (max-width: 768px) {
-            .progress-wrap {
-                display: block !important;
-            }
-        }
-    </style>
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+<body>
 
-<body class="home-freelancer light">
+  <!-- Announcement -->
+  <div class="topbar">
+    <strong>Livraison rapide</strong> à Bamako &amp; partout au Mali · Commande directe via <strong>WhatsApp</strong> · Paiement Mobile Money
+  </div>
 
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="wrap nav__inner">
+      <a href="#hero" class="nav__logo">
+        <img src="assets/logo.jpeg" alt="VP">
+        <span>VP</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="#hero" data-nav="home">Accueil</a></li>
+        <li><a href="#featured" data-nav="featured">Nouveautés</a></li>
+        <li><a href="catalogue.html" data-nav="catalogue">Catalogue</a></li>
+        <li><a href="#affiliation" data-nav="affiliation">Affiliation</a></li>
+        <li><a href="#contact" data-nav="contact">Contact</a></li>
+      </ul>
+      <div class="nav__right">
+        <button class="nav__cart" id="cart-open" aria-label="Mon panier">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          <span class="nav__cart-count" id="cart-count">0</span>
+        </button>
+        <button class="nav__burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
 
+  <!-- Mobile menu -->
+  <div class="nav-mobile" id="nav-mobile">
+    <a href="#hero" data-nav="home">Accueil</a>
+    <a href="#featured" data-nav="featured">Nouveautés</a>
+    <a href="catalogue.html" data-nav="catalogue">Catalogue</a>
+    <a href="#affiliation" data-nav="affiliation">Affiliation</a>
+    <a href="#contact" data-nav="contact">Contact</a>
+  </div>
 
-    <!-- ==================== Start Loading ==================== -->
-
-    <div class="loader-wrap">
-        <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
-            <path id="svg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
-        </svg>
-
-        <div class="loader-wrap-heading">
-            <div class="load-text">
-                <span>P</span>
-                <span>A</span>
-                <span>L</span>
-                <span>A</span>
-                <span>C</span>
-                <span>E</span>
-            </div>
+  <!-- HERO -->
+  <header class="hero" id="hero">
+    <div class="hero__media">
+      <img src="assets/images/produit-03.jpeg" alt="Tenue premium VP" fetchpriority="high">
+      <div class="hero__overlay"></div>
+      <div class="hero__glow hero__glow--a"></div>
+      <div class="hero__glow hero__glow--b"></div>
+      <div class="hero__spotlight"></div>
+    </div>
+    <div class="hero__inner">
+      <div class="hero__text reveal">
+        <span class="hero__eyebrow">Collection Premium 2026</span>
+        <h1 class="hero__title">L'élégance<br>africaine,<br><em>réinventée</em></h1>
+        <p class="hero__sub">Agbada, grands boubous, kaftans et ensembles brodés. Des pièces d'exception taillées pour les Leaders — être l'art ou porter l'art.</p>
+        <div class="hero__actions">
+          <a href="catalogue.html" class="btn btn--gold">Découvrir la Collection
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+          <a href="https://wa.me/22374335905?text=Bonjour%20VP%2C%20je%20souhaite%20commander%20une%20tenue." target="_blank" rel="noopener" class="btn btn--wa">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Commander via WhatsApp
+          </a>
         </div>
-    </div>
-
-    <!-- ==================== End Loading ==================== -->
-
-
-    <div class="cursor"></div>
-    <div class="blur-div"></div>
-
-
-    <!-- ==================== Start progress-scroll-button ==================== -->
-
-    <div class="progress-wrap cursor-pointer">
-        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-        </svg>
-    </div>
-
-    <!-- ==================== End progress-scroll-button ==================== -->
-
-
-
-
-
-    <div id="smooth-wrapper">
-
-
-        <div id="smooth-content">
-
-            <main class="o-hidden">
-
-
-
-                <!-- ==================== Start Header ==================== -->
-
-                <header class="hero-obama-style" data-scroll-index="0">
-                    <div class="hero-left">
-                        <div class="hero-l-shape-tl"></div>
-                        <div class="hero-l-shape-bl"></div>
-                        <h1 class="hero-name">
-                            Abdoulaye<br><span class="line2">Fakoly Sissoko</span>
-                        </h1>
-                        <p class="hero-title">CEO de VP — La marque des Leaders</p>
-                        <div class="hero-title-underline"></div>
-                        <button type="button" class="btn-save-contact" id="btn-save-contact" aria-label="Enregistrer le contact">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                            Enregistrer Contact
-                        </button>
-                    </div>
-                    <div class="hero-divider"></div>
-                    <div class="hero-right">
-                        <div class="hero-l-shape-tr"></div>
-                        <div class="hero-portrait">
-                            <img src="Assetsly/palace/presi.jpeg" alt="Abdoulaye Fakoly Sissoko - Palace CEO de VP">
-                        </div>
-                    </div>
-                </header>
-
-                <!-- ==================== End Header ==================== -->
-
-
-
-
-
-
-
-
-                <!-- ==================== Start intro ==================== -->
-
-                <section class="intro-style2 position-relative" data-scroll-index="3">
-                    <div class="container">
-                        <div class="row" data-ui-animate data-delay="0.2">
-                            <div class="col-lg-4">
-                                <div class="sec-head mb-80px">
-                                    <h6 class="text-uppercase">À propos</h6>
-                                </div>
-                            </div>
-                            <div class="col-lg-8">
-                                <div>
-                                    <h2 class="text-indent fs-40">Homme politique engagé dans les actes caritatifs, Abdoulaye Fakoly incarne le leadership par l'action. À travers VP — Vêtement Palace, il porte la marque des Leaders.</h2>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 offset-lg-2 col-md-6 col-10">
-                                <div class="mt-80px">
-                                    <h6 class="fs-20"><span class="d-inline" style="color: #D12E4A;">Nous croyons que le leadership n'est pas qu'une question de
-                                            pouvoir</span> — c'est un outil puissant
-                                        qui inspire l'espoir et impulse le changement.</h6>
-                                </div>
-                            </div>
-                            <div class="col-lg-5 offset-lg-1">
-                                <div class="row mt-80px lists-row">
-                                    <div class="col-6 col-sm-6 sm-mb15">
-                                        <ul class="rest">
-                                            <li class="mb-15px">Leadership</li>
-                                            <li class="mb-15px">Engagement</li>
-                                            <li class="mb-15px">Charité</li>
-                                            <li class="mb-15px">Formation</li>
-                                            <li>Intégrité</li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-6 col-sm-6">
-                                        <ul class="rest">
-                                            <li class="mb-15px">Démocratie</li>
-                                            <li class="mb-15px">Finance</li>
-                                            <li class="mb-15px">Culture</li>
-                                            <li>Éducation</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 mt-80px">
-                                <div class="row obama-cards-row">
-                                    <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-                                        <div class="obama-address-card obama-card" data-obama-card>
-                                            <div class="obama-address-card__line obama-address-card__line--tl"></div>
-                                            <div class="obama-address-card__line obama-address-card__line--br"></div>
-                                            <div class="obama-address-card__inner">
-                                                <span class="obama-address-card__label">Marque</span>
-                                                <h3 class="obama-address-card__title">VP — Vêtement Palace</h3>
-                                                <p class="obama-address-card__address">La marque des Leaders. Le palacisme : une sagacité qui lie modernité et culture africaine.</p>
-                                                <span class="obama-address-card__link obama-address-card__link--muted">Vêtement Palace</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-                                        <div class="obama-address-card obama-card" data-obama-card>
-                                            <div class="obama-address-card__line obama-address-card__line--tl"></div>
-                                            <div class="obama-address-card__line obama-address-card__line--br"></div>
-                                            <div class="obama-address-card__inner">
-                                                <span class="obama-address-card__label">Formation</span>
-                                                <h3 class="obama-address-card__title">Parcours</h3>
-                                                <p class="obama-address-card__address">Master en banque et ingénierie financière<br>Président de l'AGE à l'IAM (2025)</p>
-                                                <span class="obama-address-card__link obama-address-card__link--muted">Leader</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="obama-address-card obama-card" data-obama-card>
-                                            <div class="obama-address-card__line obama-address-card__line--tl"></div>
-                                            <div class="obama-address-card__line obama-address-card__line--br"></div>
-                                            <div class="obama-address-card__inner">
-                                                <span class="obama-address-card__label">Engagement</span>
-                                                <h3 class="obama-address-card__title">Actes caritatifs</h3>
-                                                <p class="obama-address-card__address">Homme politique engagé. Titre honorifique d'Ambassadeur de l'orphelinat Niaber.</p>
-                                                <span class="obama-address-card__link obama-address-card__link--muted">Ambassadeur orphelinat Niaber</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="social-cards-wrapper mt-50px" data-ui-animate data-delay="0.4">
-                            <div class="social-cards-row">
-                                <a href="https://wa.me/22374335905" target="_blank" rel="noopener" class="social-card" aria-label="WhatsApp">
-                                    <div class="social-card__icon">
-                                        <svg viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                                    </div>
-                                    <span class="social-card__label">WhatsApp</span>
-                                </a>
-                                <a href="https://www.tiktok.com/@palace_sissoko?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener" class="social-card" aria-label="TikTok">
-                                    <div class="social-card__icon">
-                                        <svg viewBox="0 0 24 24" fill="#000000"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
-                                    </div>
-                                    <span class="social-card__label">TikTok</span>
-                                </a>
-                                <a href="https://www.facebook.com/share/1GttQpMNyu/?mibextid=wwXIfr" target="_blank" rel="noopener" class="social-card" aria-label="Facebook">
-                                    <div class="social-card__icon">
-                                        <svg viewBox="0 0 24 24" fill="#1877F2"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-                                    </div>
-                                    <span class="social-card__label">Facebook</span>
-                                </a>
-                                <a href="https://snapchat.com/t/5EK7nDwS" target="_blank" rel="noopener" class="social-card social-card--snapchat" aria-label="Snapchat">
-                                    <div class="social-card__icon">
-                                        <img src="Assetsly/snap.png" alt="Snapchat" width="32" height="32">
-                                    </div>
-                                    <span class="social-card__label">Snapchat</span>
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- Demande de prise de RDV -->
-                        <div class="row mt-80px justify-content-center">
-                            <div class="col-lg-8 col-xl-6">
-                                <div class="rdv-card">
-                                    <div class="rdv-card__line rdv-card__line--tl"></div>
-                                    <div class="rdv-card__line rdv-card__line--br"></div>
-                                    <div class="rdv-card__inner">
-                                        <span class="rdv-card__label">Contact</span>
-                                        <h3 class="rdv-card__title">Demande de rendez-vous</h3>
-                                        <p class="rdv-card__desc">Remplissez le formulaire et envoyez votre demande directement sur WhatsApp.</p>
-                                        <form id="rdv-form" class="rdv-form">
-                                            <div class="rdv-form__row">
-                                                <input type="text" name="nom" placeholder="Nom complet" required class="rdv-form__input">
-                                                <input type="tel" name="tel" placeholder="Téléphone" required class="rdv-form__input">
-                                            </div>
-                                            <div class="rdv-form__row">
-                                                <input type="text" name="objet" placeholder="Objet" required class="rdv-form__input">
-                                            </div>
-                                            <div class="rdv-form__row rdv-form__row--datetime">
-                                                <div class="rdv-form__field">
-                                                    <label class="rdv-form__label" for="rdv-date">Date souhaitée</label>
-                                                    <input type="text" id="rdv-date" name="date" placeholder="Choisir une date" required readonly class="rdv-form__input rdv-form__input--date">
-                                                </div>
-                                                <div class="rdv-form__field">
-                                                    <label class="rdv-form__label" for="rdv-heure">Heure</label>
-                                                    <input type="time" id="rdv-heure" name="heure" value="10:00" required class="rdv-form__input rdv-form__input--time">
-                                                </div>
-                                            </div>
-                                            <div class="rdv-form__row">
-                                                <textarea name="message" placeholder="Message (précisions sur votre demande...)" rows="3" required class="rdv-form__input rdv-form__textarea"></textarea>
-                                            </div>
-                                            <button type="submit" class="rdv-form__btn">
-                                                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                                                Envoyer sur WhatsApp
-                                            </button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- ==================== End intro ==================== -->
-
-                <!-- ==================== Start section ==================== -->
-
-                <div class="container-xxl" data-ui-animate data-delay="0.2">
-                    <div class="o-hidden border-radius-100px h-700px">
-                        <div class="bg-img background-position-center h-800px"
-                            data-background="Assetsly/palace/3.jpeg" data-speed="0.5" data-lag="0">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- ==================== End section ==================== -->
-
-
-
-
-
-                <!-- ==================== Start Footer ==================== -->
-
-                <footer class="footer-style4">
-                    <div class="container pb-80px">
-                    </div>
-                    <div class="container pt-30px pb-30px line-top border-color-transparent-white-light">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="links">
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="copyright d-flex">
-                                    <div class="ml-auto">
-                                        <p class="fz-13">© 2026 DymoLabs tout droits reservé<span></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
-
-                <!-- ==================== End Footer ==================== -->
-
-            </main>
-
-
+        <div class="hero__stats">
+          <div class="hero__stat"><b><span class="stat-count" data-target="32">0</span>+</b><span>Modèles</span></div>
+          <div class="hero__stat"><b><span class="stat-count" data-target="100">0</span>%</b><span>Premium</span></div>
+          <div class="hero__stat"><b><span class="stat-count" data-target="24">0</span>h</b><span>Livraison Bamako</span></div>
         </div>
-
+      </div>
     </div>
+    <div class="hero__scroll"><span>Scroll</span></div>
+  </header>
 
+  <!-- Marquee -->
+  <div class="marquee">
+    <div class="marquee__track" id="marquee-track"></div>
+  </div>
 
+  <!-- FEATURES -->
+  <section class="features">
+    <div class="wrap features__grid">
+      <div class="feature reveal">
+        <span class="feature__num">01</span>
+        <h3>Livraison Rapide</h3>
+        <p>Livraison à Bamako en 24h et expédition partout au Mali. Suivi de votre commande en temps réel.</p>
+      </div>
+      <div class="feature reveal">
+        <span class="feature__num">02</span>
+        <h3>Qualité Premium</h3>
+        <p>Des matières nobles et des broderies soignées. Chaque pièce est une œuvre à porter, finie à la main.</p>
+      </div>
+      <div class="feature reveal">
+        <span class="feature__num">03</span>
+        <h3>Clients Satisfaits</h3>
+        <p>Une clientèle exigeante qui nous fait confiance. Commande simple via WhatsApp, service personnalisé.</p>
+      </div>
+    </div>
+  </section>
 
+  <!-- FEATURED (teaser vers le catalogue) -->
+  <section id="featured">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Nos coups de cœur</span>
+        <h2 class="section-title">Nos pièces les plus <em>prisées</em></h2>
+        <p class="section-lead">Découvrez nos pièces les plus prisées, sélectionnées avec soin pour vous.</p>
+      </div>
+      <div class="products" id="featured-grid"></div>
+      <div class="products-more">
+        <a href="catalogue.html" class="btn btn--dark">Voir tout le catalogue</a>
+      </div>
+    </div>
+  </section>
 
+  <!-- CATÉGORIES (teaser vers le catalogue filtré) -->
+  <section>
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Explorez</span>
+        <h2 class="section-title">Par <em>catégorie</em></h2>
+        <p class="section-lead">Chaque catégorie, une silhouette différente. Cliquez pour voir la collection complète.</p>
+      </div>
+      <div class="cat-tiles reveal" id="cat-tiles"></div>
+    </div>
+  </section>
 
+  <!-- AFFILIATION -->
+  <section class="affil" id="affiliation">
+    <div class="affil__pattern"></div>
+    <div class="wrap affil__inner">
+      <div class="reveal reveal-left">
+        <span class="eyebrow">Programme Ambassadeurs</span>
+        <h2>Devenez ambassadeur <em>du Palace</em></h2>
+        <p class="affil__lead">Parrainez vos contacts, partagez votre code promo personnalisé et recevez une commission sur chaque commande.</p>
+        <div class="affil__list">
+          <div class="affil__item">
+            <div class="affil__item-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M20 12v10H4V12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg></div>
+            <div><h4>Code Promo Unique</h4><p>Recevez un code personnalisé à partager avec vos contacts.</p></div>
+          </div>
+          <div class="affil__item">
+            <div class="affil__item-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+            <div><h4>Commission sur chaque vente</h4><p>Une rémunération à chaque commande passée avec votre code.</p></div>
+          </div>
+          <div class="affil__item">
+            <div class="affil__item-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+            <div><h4>Aucune limite</h4><p>Aucune limite sur le nombre de clients que vous pouvez référer.</p></div>
+          </div>
+        </div>
+        <div class="affil__cta">
+          <a href="#" class="btn btn--gold" id="affil-btn">S'inscrire Gratuitement</a>
+        </div>
+      </div>
+      <div class="affil__card reveal">
+        <span class="eyebrow" style="color:var(--gold-light)">Votre code exemple</span>
+        <div class="code">VP-LEADER</div>
+        <p>Partagez ce type de code et suivez vos filleuls. Rejoignez le programme pour recevoir le vôtre et commencer à gagner dès aujourd'hui.</p>
+      </div>
+    </div>
+  </section>
 
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="wrap contact__inner">
+      <div class="reveal">
+        <span class="eyebrow">Contact</span>
+        <h2 class="section-title">Parlons de votre <em>tenue</em></h2>
+        <p class="section-lead" style="margin-left:0;text-align:left">Une question, une commande sur-mesure ? Écrivez-nous directement.</p>
+        <ul class="contact__info" style="margin-top:24px">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Hamdallaye ACI 2000, Bamako, Mali</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.21 12 19.79 19.79 0 0 1 1.14 3.35 2 2 0 0 1 3.11 1h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg> +223 74 33 59 05</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> sissokoabdoulaye100@gmail.com</li>
+        </ul>
+        <div class="contact__socials">
+          <a href="https://wa.me/22374335905" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+          <a href="https://www.instagram.com/vetement_palace" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.058 1.645-.07 4.849-.07zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+          <a href="https://www.tiktok.com/@vp_officiel1" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg></a>
+        </div>
+      </div>
+      <div class="contact__map reveal">
+        <h3>Commander est simple</h3>
+        <p>Ajoutez vos pièces préférées au panier, validez, et votre commande part directement sur notre WhatsApp. Nous confirmons la disponibilité, la taille et la livraison.</p>
+        <a href="https://wa.me/22374335905?text=Bonjour%20VP%2C%20je%20souhaite%20passer%20une%20commande." target="_blank" rel="noopener" class="btn btn--wa">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Écrire sur WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
 
+  <!-- NEWSLETTER -->
+  <section class="newsletter">
+    <div class="wrap">
+      <span class="eyebrow" style="color:var(--gold-light)">Le Cercle VP</span>
+      <h2>Rejoignez <em>les Leaders</em></h2>
+      <p>Accès anticipé aux nouvelles collections, drops exclusifs et offres privées.</p>
+      <form class="newsletter__form" id="newsletter-form">
+        <input type="email" name="email" placeholder="Votre adresse e-mail" aria-label="E-mail" required>
+        <button type="submit" class="btn btn--gold">S'inscrire</button>
+      </form>
+      <p class="newsletter__feedback" id="newsletter-feedback" role="status" aria-live="polite"></p>
+    </div>
+  </section>
 
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand"><img src="assets/logo.jpeg" alt="VP"><span>Vêtement Palace</span></div>
+          <p class="tag">« Être l'art ou porter l'art — à vous de choisir. » La marque des Leaders, née à Bamako.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Navigation</h4>
+          <a href="#hero">Accueil</a>
+          <a href="#featured">Nouveautés</a>
+          <a href="catalogue.html">Catalogue</a>
+          <a href="#affiliation">Affiliation</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer__col">
+          <h4>Nous suivre</h4>
+          <a href="https://www.instagram.com/vetement_palace" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.tiktok.com/@vp_officiel1" target="_blank" rel="noopener">TikTok</a>
+          <a href="https://snapchat.com/add/sissoko_palace7" target="_blank" rel="noopener">Snapchat</a>
+          <a href="https://wa.me/22374335905" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+      <div class="footer__bottom">© 2026 VP — Vêtement Palace · Hamdallaye ACI 2000, Bamako, Mali · Tous droits réservés.</div>
+    </div>
+  </footer>
 
+  <!-- CART DRAWER -->
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart" id="cart" aria-label="Panier">
+    <div class="cart__head">
+      <h3>Mon Panier</h3>
+      <button class="cart__close" id="cart-close" aria-label="Fermer">&times;</button>
+    </div>
+    <div class="cart__body" id="cart-body"></div>
+    <div class="cart__foot">
+      <div class="cart__total"><span>Total</span><b id="cart-total">0 FCFA</b></div>
+      <p class="cart__note">Le paiement et la livraison sont confirmés sur WhatsApp après validation.</p>
+      <button class="btn btn--wa btn--full" id="cart-checkout">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884"/></svg>
+        Commander via WhatsApp
+      </button>
+    </div>
+  </aside>
 
-    <!-- jQuery -->
-    <script src="assets/js/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/jquery-migrate-3.4.0.min.js"></script>
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox__close" id="lightbox-close">&times;</button>
+    <img src="" alt="" id="lightbox-img">
+  </div>
 
-    <!-- plugins -->
-    <script src="assets/js/plugins.js"></script>
-    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+  <!-- Toast -->
+  <div class="toast" id="toast">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+    <span id="toast-msg">Ajouté au panier</span>
+  </div>
 
-    <script src="assets/js/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/fr.js"></script>
-    <script src="assets/js/ScrollSmoother.min.js"></script>
-    <script src="assets/js/ScrollTrigger.min.js"></script>
-    <script src="assets/js/smoother-script.js"></script>
-    <script src="assets/js/springer.min.js"></script>
+  <!-- Scroll top -->
+  <button class="to-top" id="to-top" aria-label="Haut de page">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
 
-    <!-- custom scripts -->
-    <script src="assets/js/scripts.js"></script>
+  <!-- WhatsApp Float Button -->
+  <a href="https://wa.me/22374335905?text=Bonjour%20VP%2C%20je%20souhaite%20commander%20une%20tenue." target="_blank" rel="noopener" class="whatsapp-float" aria-label="Discuter sur WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 11.908.01c3.152.001 6.118 1.23 8.347 3.46A11.777 11.777 0 0 1 23.715 11.9c-.004 6.542-5.34 11.88-11.854 11.88-2.006 0-3.974-.512-5.717-1.488L0 24zm6.59-3.23c1.642.975 3.238 1.487 4.908 1.488 5.437 0 9.86-4.402 9.863-9.814a9.78 9.78 0 0 0-2.884-6.953 9.845 9.845 0 0 0-6.993-2.887C6.046 2.604 1.625 7.005 1.623 12.417c0 1.737.464 3.4 1.343 4.947l-.98 3.578 3.661-.962zM17.47 14.38c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
+  </a>
 
-    <!-- RDV Form - Date/Time picker + WhatsApp -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var dateInput = document.getElementById('rdv-date');
-            if (dateInput && typeof flatpickr !== 'undefined') {
-                flatpickr(dateInput, {
-                    locale: 'fr',
-                    dateFormat: 'Y-m-d',
-                    altInput: true,
-                    altFormat: 'j F Y',
-                    allowInput: false,
-                    minDate: 'today',
-                    disableMobile: true
-                });
-            }
-            var form = document.getElementById('rdv-form');
-            if (form) {
-                form.addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    var nom = this.nom.value.trim();
-                    var tel = this.tel.value.trim();
-                    var objet = this.objet.value.trim();
-                    var date = this.date.value;
-                    var heure = this.heure.value;
-                    var message = this.message.value.trim();
-                    var dateFormatted = date ? new Date(date + 'T12:00:00').toLocaleDateString('fr-FR', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }) : '';
-                    var parts = [];
-                    parts.push('*Objet :* ' + objet);
-                    parts.push('');
-                    parts.push('Bonjour à M. Fakoly,');
-                    parts.push('');
-                    var heureDisplay = heure ? heure.replace(':', 'h') : '';
-                    parts.push('Je souhaite prendre un rendez-vous pour le ' + dateFormatted + (heureDisplay ? ' à ' + heureDisplay : '') + '.');
-                    parts.push('');
-                    parts.push(message);
-                    parts.push('');
-                    parts.push('Cordialement,');
-                    parts.push(nom);
-                    parts.push(tel);
-                    var text = encodeURIComponent(parts.join('\n'));
-                    window.open('https://wa.me/22374335905?text=' + text, '_blank');
-                });
-            }
-        });
-
-        // Enregistrer Contact - vCard avec photo pour téléphone / appareil
-        var btnSaveContact = document.getElementById('btn-save-contact');
-        if (btnSaveContact) {
-            btnSaveContact.addEventListener('click', function() {
-                var btn = this;
-                var originalText = btn.innerHTML;
-                btn.disabled = true;
-                btn.innerHTML = '<span>Chargement…</span>';
-                function done() {
-                    btn.disabled = false;
-                    btn.innerHTML = originalText;
-                }
-                function buildVCard(photoBase64) {
-                    var lines = [
-                        'BEGIN:VCARD',
-                        'VERSION:3.0',
-                        'FN:Abdoulaye Fakoly Sissoko',
-                        'N:Sissoko;Abdoulaye Fakoly;;;',
-                        'TEL;TYPE=CELL:+22374335905',
-                        'ORG:VP - Vêtement Palace',
-                        'TITLE:CEO de VP'
-                    ];
-                    if (photoBase64) {
-                        var folded = '';
-                        for (var i = 0; i < photoBase64.length; i += 75) {
-                            folded += (i > 0 ? '\r\n ' : '') + photoBase64.substring(i, i + 75);
-                        }
-                        lines.push('PHOTO;ENCODING=b;TYPE=JPEG:' + folded);
-                    }
-                    lines.push('END:VCARD');
-                    return lines.join('\r\n');
-                }
-                function downloadVCard(vcard) {
-                    var blob = new Blob([vcard], { type: 'text/vcard;charset=utf-8' });
-                    var url = URL.createObjectURL(blob);
-                    var a = document.createElement('a');
-                    a.href = url;
-                    a.download = 'Abdoulaye_Fakoly_Sissoko.vcf';
-                    document.body.appendChild(a);
-                    a.click();
-                    document.body.removeChild(a);
-                    URL.revokeObjectURL(url);
-                }
-                function getPhotoBase64() {
-                    return fetch('Assetsly/palace/presi.jpeg')
-                        .then(function(r) { return r.blob(); })
-                        .then(function(blob) {
-                            return new Promise(function(resolve, reject) {
-                                var reader = new FileReader();
-                                reader.onloadend = function() {
-                                    resolve(reader.result.split(',')[1] || null);
-                                };
-                                reader.onerror = reject;
-                                reader.readAsDataURL(blob);
-                            });
-                        })
-                        .catch(function() {
-                            var img = document.querySelector('.hero-portrait img');
-                            if (!img || !img.complete || img.naturalWidth === 0) return null;
-                            try {
-                                var c = document.createElement('canvas');
-                                c.width = img.naturalWidth;
-                                c.height = img.naturalHeight;
-                                c.getContext('2d').drawImage(img, 0, 0);
-                                return c.toDataURL('image/jpeg', 0.9).split(',')[1];
-                            } catch (e) { return null; }
-                        });
-                }
-                getPhotoBase64()
-                    .then(function(photoBase64) {
-                        downloadVCard(buildVCard(photoBase64));
-                    })
-                    .catch(function() {
-                        downloadVCard(buildVCard(null));
-                    })
-                    .finally(done);
-            });
-        }
-    </script>
-
-    <!-- Obama Cards - GSAP Animation -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const cards = document.querySelectorAll('[data-obama-card]');
-            const cardsRow = document.querySelector('.obama-cards-row');
-            if (cards.length && typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
-                gsap.registerPlugin(ScrollTrigger);
-                gsap.timeline({
-                    scrollTrigger: {
-                        trigger: cardsRow,
-                        start: 'top 85%',
-                        toggleActions: 'play none none reverse'
-                    }
-                }).to(cards, {
-                    opacity: 1,
-                    y: 0,
-                    duration: 0.8,
-                    stagger: 0.15,
-                    ease: 'power3.out'
-                });
-            } else if (cards.length) {
-                cards.forEach(function(c) {
-                    c.style.opacity = '1';
-                    c.style.transform = 'none';
-                });
-            }
-        });
-    </script>
-
+  <script src="js/products.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/home.js"></script>
 </body>
-
 </html>
