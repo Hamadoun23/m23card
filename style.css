@@ -576,6 +576,8 @@ section { padding: 150px 0; position: relative; }
 @media (max-width: 860px) {
   .nav__links { display: none; }
   .nav__burger { display: flex; }
+  .hero__glow { display: none; }
+  .hero__media img { object-fit: cover; object-position: top center; }
   .features__grid { grid-template-columns: 1fr; }
   .feature { border-left: none; border-top: 1px solid var(--line-soft); }
   .feature:first-child { border-top: none; }
