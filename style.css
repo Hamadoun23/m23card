@@ -120,22 +120,6 @@ section { padding: 150px 0; position: relative; }
 ::-webkit-scrollbar-thumb:hover { background: var(--gold-dark); }
 
 /* =========================================================
-   ANNOUNCEMENT BAR
-   ========================================================= */
-.topbar {
-  background: var(--ink);
-  color: rgba(250, 249, 247, 0.75);
-  font-size: .66rem;
-  letter-spacing: .18em;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 12px 16px;
-  position: relative; z-index: 60;
-  font-weight: 400;
-}
-.topbar strong { color: var(--gold-light); font-weight: 500; }
-
-/* =========================================================
    NAV
    ========================================================= */
 .nav {
@@ -154,8 +138,12 @@ section { padding: 150px 0; position: relative; }
 }
 .nav__inner { display: flex; align-items: center; justify-content: space-between; width: 100%; }
 .nav__logo { display: flex; align-items: center; gap: 14px; }
-.nav__logo img { width: 36px; height: 36px; border-radius: 0; object-fit: cover; border: 1px solid var(--line-strong); }
-.nav__logo span { font-family: var(--font-serif); font-size: 1.5rem; font-weight: 500; letter-spacing: .16em; color: var(--ink); }
+.nav__logo img { width: 56px; height: 56px; object-fit: contain; }
+.nav__logo span {
+  font-family: var(--font-serif); font-weight: 600; font-size: 1.6rem; letter-spacing: -0.01em;
+  color: var(--gold-dark);
+}
+.nav__logo span b { color: var(--ink); font-weight: 600; }
 .nav__links { display: flex; gap: 44px; }
 .nav__links a { font-size: .72rem; font-weight: 500; letter-spacing: .16em; text-transform: uppercase; position: relative; padding: 4px 0; color: var(--ink-soft); transition: color 0.3s; }
 .nav__links a::after {
@@ -211,15 +199,9 @@ section { padding: 150px 0; position: relative; }
   overflow: hidden;
   padding: 70px 0;
 }
-.hero__media { position: absolute; inset: 0; z-index: 0; overflow: hidden; }
+.hero__media { position: absolute; inset: 0; z-index: 0; overflow: hidden; background: var(--bg-deep); }
 .hero__media img {
-  width: 100%; height: 100%; object-fit: cover; object-position: top center;
-  transform-origin: center 30%;
-  animation: heroKenBurns 22s ease-in-out infinite alternate;
-}
-@keyframes heroKenBurns {
-  0% { transform: scale(1) translate3d(0,0,0); }
-  100% { transform: scale(1.035) translate3d(-0.5%, -0.7%, 0); }
+  width: 100%; height: 100%; object-fit: contain; object-position: center center;
 }
 .hero__overlay {
   position: absolute; inset: 0; z-index: 1;
@@ -336,51 +318,61 @@ section { padding: 150px 0; position: relative; }
 .filter:hover { border-color: var(--ink); color: var(--ink); }
 .filter.active { background: var(--ink); color: var(--bg); border-color: var(--ink); }
 
-.products { display: grid; grid-template-columns: repeat(4, 1fr); gap: 46px 32px; }
+.products { display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px 24px; }
 .card {
   background: transparent;
-  overflow: hidden;
   transition: opacity .3s ease;
   display: flex; flex-direction: column;
   position: relative;
 }
-.card__media { position: relative; overflow: hidden; aspect-ratio: 2/3; background: #EFEBE3; }
-.card__media img { width: 100%; height: 100%; object-fit: cover; object-position: center 14%; transition: transform 1.1s cubic-bezier(0.16, 1, 0.3, 1); }
-.card:hover .card__media img { transform: scale(1.045); }
+.card__media {
+  position: relative; overflow: hidden; aspect-ratio: 3/4; background: #EFEBE3;
+  border-radius: 6px;
+}
+.card__media img { width: 100%; height: 100%; object-fit: cover; object-position: center 14%; transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1); }
+.card:hover .card__media img { transform: scale(1.05); }
+.card__scrim {
+  position: absolute; inset: auto 0 0 0; height: 58%;
+  background: linear-gradient(180deg, transparent 0%, rgba(11,11,10,0.15) 35%, rgba(11,11,10,0.82) 100%);
+  pointer-events: none;
+}
+.card__overlay {
+  position: absolute; left: 18px; right: 18px; bottom: 16px; z-index: 4;
+  color: var(--bg);
+}
 .card__tag {
-  position: absolute; top: 16px; left: 16px;
-  background: var(--bg); color: var(--ink); font-size: .6rem; font-weight: 500;
-  letter-spacing: .12em; text-transform: uppercase; padding: 7px 13px; border-radius: 0;
-  border: 1px solid var(--line-strong);
+  position: absolute; top: 14px; left: 14px;
+  background: rgba(250,249,249,0.92); color: var(--ink); font-size: .58rem; font-weight: 500;
+  letter-spacing: .12em; text-transform: uppercase; padding: 6px 12px; border-radius: 3px;
   z-index: 5;
 }
-.card__tag--promo { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.card__tag--promo { background: var(--ink); color: var(--bg); }
 .card__zoom {
-  position: absolute; top: 16px; right: 16px;
-  width: 36px; height: 36px; border-radius: 0;
-  background: var(--bg); color: var(--ink);
-  border: 1px solid var(--line-strong);
+  position: absolute; top: 14px; right: 14px;
+  width: 34px; height: 34px; border-radius: 50%;
+  background: rgba(250,249,249,0.92); color: var(--ink);
   display: grid; place-items: center; opacity: 0; transform: translateY(-6px);
   transition: all .3s ease;
   z-index: 5;
 }
 .card:hover .card__zoom { opacity: 1; transform: translateY(0); }
-.card__zoom:hover { background: var(--ink); color: var(--bg); border-color: var(--ink); }
-.card__zoom svg { width: 16px; height: 16px; }
-.card__body { padding: 22px 2px 0; display: flex; flex-direction: column; flex: 1; }
-.card__cat { font-size: .64rem; letter-spacing: .16em; text-transform: uppercase; color: var(--gold-dark); font-weight: 500; }
-.card__name { font-family: var(--font-serif); font-weight: 500; font-size: 1.18rem; margin: 10px 0 18px; line-height: 1.3; color: var(--ink); }
-.card__price-row { display: flex; align-items: baseline; gap: 10px; margin-top: auto; margin-bottom: 20px; }
-.card__price { font-weight: 500; font-size: 1rem; color: var(--ink); letter-spacing: .02em; }
-.card__old { font-size: .82rem; color: var(--muted); text-decoration: line-through; }
+.card__zoom:hover { background: var(--ink); color: var(--bg); }
+.card__zoom svg { width: 15px; height: 15px; }
+.card__cat { font-size: .62rem; letter-spacing: .14em; text-transform: uppercase; color: rgba(250,249,249,0.7); }
+.card__name { font-family: var(--font-serif); font-weight: 500; font-size: 1.1rem; margin: 6px 0 6px; line-height: 1.28; color: var(--bg); }
+.card__price-row { display: flex; align-items: baseline; gap: 9px; }
+.card__price { font-weight: 500; font-size: .95rem; color: var(--bg); letter-spacing: .02em; }
+.card__old { font-size: .78rem; color: rgba(250,249,249,0.55); text-decoration: line-through; }
 .card__add {
-  display: flex; align-items: center; justify-content: center; gap: 8px;
-  width: 100%; padding: 14px; border-radius: 0;
-  background: transparent; color: var(--ink); font-weight: 500; font-size: .68rem;
-  letter-spacing: .16em; text-transform: uppercase;
-  border: 1px solid var(--ink);
+  display: flex; align-items: center; justify-content: center; gap: 9px;
+  width: 100%; margin-top: 14px; padding: 15px;
+  background: transparent; color: var(--ink); font-weight: 600; font-size: .74rem;
+  letter-spacing: .12em; text-transform: uppercase;
+  border: 1.5px solid var(--ink); border-radius: 4px;
   transition: all .3s ease;
 }
+.card__add svg { width: 16px; height: 16px; }
+.card__add:hover { background: var(--ink); color: var(--bg); }
 .card__add svg { width: 15px; height: 15px; }
 .card__add:hover { background: var(--ink); color: var(--bg); }
 
@@ -473,7 +465,7 @@ section { padding: 150px 0; position: relative; }
 .footer { background: var(--bg-deep); color: rgba(250,249,247,0.45); padding: 90px 0 36px; }
 .footer__grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 40px; margin-bottom: 60px; }
 .footer__brand { display: flex; align-items: center; gap: 14px; margin-bottom: 22px; }
-.footer__brand img { width: 42px; height: 42px; border-radius: 0; border: 1px solid rgba(250,249,247,0.25); }
+.footer__brand img { width: 58px; height: 58px; object-fit: contain; }
 .footer__brand span { font-family: var(--font-serif); font-weight: 500; font-size: 1.5rem; color: var(--bg); letter-spacing: 0.1em; }
 .footer__col h4 { color: var(--bg); font-size: .76rem; letter-spacing: .2em; text-transform: uppercase; margin-bottom: 24px; font-weight: 500; }
 .footer__col a { display: block; padding: 7px 0; font-size: .9rem; transition: color .25s; }

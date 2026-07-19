@@ -13,7 +13,7 @@ const fmt = n => n.toLocaleString("fr-FR") + " FCFA";
 
 /* ---------- Rendu carte produit (partagé home + catalogue) ---------- */
 function cardHTML(p, idx = 0) {
-  const tag = p.oldPrice
+  const tag = p.promo
     ? `<span class="card__tag card__tag--promo">Promo</span>`
     : (p.isNew ? `<span class="card__tag">Nouveau</span>` : "");
   const old = p.oldPrice ? `<span class="card__old">${fmt(p.oldPrice)}</span>` : "";
@@ -26,18 +26,19 @@ function cardHTML(p, idx = 0) {
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
         </button>
         <img src="${p.img}" alt="${p.name} — ${p.color}" loading="lazy">
-      </div>
-      <div class="card__body">
-        <span class="card__cat">${p.category} · ${p.color}</span>
-        <h3 class="card__name">${p.name}</h3>
-        <div class="card__price-row">
-          <span class="card__price">${fmt(p.price)}</span>${old}
+        <div class="card__scrim"></div>
+        <div class="card__overlay">
+          <span class="card__cat">${p.color}</span>
+          <h3 class="card__name">${p.name}</h3>
+          <div class="card__price-row">
+            <span class="card__price">${fmt(p.price)}</span>${old}
+          </div>
         </div>
-        <button class="card__add" data-add="${p.id}">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-          Ajouter au panier
-        </button>
       </div>
+      <button class="card__add" data-add="${p.id}">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        Ajouter au panier
+      </button>
     </article>`;
 }
 
